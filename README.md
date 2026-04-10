@@ -3,6 +3,8 @@
 
 A full-stack personal finance dashboard with AI-driven insights, real-time transaction tracking, budget planning, and savings goal management.
 
+🔗 **Live Demo:** [https://finsmart-ai-indol.vercel.app](https://finsmart-ai-indol.vercel.app)
+
 ---
 
 ## 📸 Screenshots
@@ -53,6 +55,7 @@ Nested `.git` folders caused `backend` and `finance-tracker` to be treated as su
 | Frontend | React (Vite), Tailwind CSS, Recharts |
 | Backend | Node.js, Express.js |
 | Database | PostgreSQL |
+| Deployment | Vercel (frontend), Railway (backend + DB) |
 
 ---
 
@@ -140,7 +143,7 @@ DB_NAME=financetracker
 cd backend
 npm install
 node server.js
-# Runs on https://finsmart-ai-production.up.railway.app
+# Runs on http://localhost:5000
 ```
 
 ### 5. Run the frontend
