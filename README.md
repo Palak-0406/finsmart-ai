@@ -140,7 +140,7 @@ DB_NAME=financetracker
 cd backend
 npm install
 node server.js
-# Runs on http://localhost:5000
+# Runs on https://finsmart-ai-production.up.railway.app
 ```
 
 ### 5. Run the frontend

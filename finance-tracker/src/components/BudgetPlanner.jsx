@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Trash2, Plus, PieChart } from "lucide-react";
 
-const API = "http://localhost:5000/api";
+const API = "https://finsmart-ai-production.up.railway.app/api";
 
 export default function BudgetPlanner({ transactions, dark, show, setShow }) {
   const [budgets, setBudgets] = useState([]);

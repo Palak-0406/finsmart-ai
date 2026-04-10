@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Trash2, Plus, Target } from "lucide-react";
 
-const API = "http://localhost:5000/api";
+const API = "https://finsmart-ai-production.up.railway.app/api";
 
 export default function SavingsGoals({ dark, show, setShow }) {
   const [goals, setGoals] = useState([]);

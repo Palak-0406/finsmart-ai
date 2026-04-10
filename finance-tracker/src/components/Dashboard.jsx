@@ -6,7 +6,7 @@ import SavingsGoals from "./SavingsGoals";
 import BudgetPlanner from "./BudgetPlanner";
 
 const COLORS = ["#3b82f6", "#f43f5e", "#10b981", "#f59e0b", "#8b5cf6", "#06b6d4"];
-const API = "http://localhost:5000/api";
+const API = "https://finsmart-ai-production.up.railway.app/api";
 
 export default function Dashboard() {
   const [transactions, setTransactions] = useState([]);
