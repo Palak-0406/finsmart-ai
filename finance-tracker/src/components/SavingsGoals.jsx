@@ -68,7 +68,7 @@ export default function SavingsGoals({ dark, show, setShow }) {
   function monthsLeft(deadline) {
     if (!deadline) return null;
     const now = new Date();
-    const end = new Date(deadline);
+    const end = new Date(deadline.slice(0, 10));
     const months = (end.getFullYear() - now.getFullYear()) * 12 + (end.getMonth() - now.getMonth());
     return months > 0 ? months : 0;
   }
@@ -159,7 +159,7 @@ export default function SavingsGoals({ dark, show, setShow }) {
                       <div>
                         <p style={{ fontSize: 14, fontWeight: 700, color: t.text, marginBottom: 2 }}>{goal.name}</p>
                         <p style={{ fontSize: 11, color: t.subtext }}>
-                          {goal.deadline ? `Deadline: ${goal.deadline}` : "No deadline set"}
+                          {goal.deadline ? `Deadline: ${goal.deadline.slice(0, 10)}` : "No deadline set"}
                           {months !== null && months > 0 && ` · ${months} months left`}
                           {months === 0 && " · Deadline reached!"}
                         </p>
